@@ -314,7 +314,7 @@ body {
 }
 /* 修改 GIF 容器，使其在手机上自适应 */
 .gif-photo-large {
-    width: 500px;          /* 宽度占满父容器 */
+    width: 100%;          /* 宽度占满父容器 */
     max-width: 350px;     /* 在大屏手机上也不要太大 */
     height: auto;         /* 高度根据内容自动伸缩 */
     display: flex;
@@ -324,7 +324,7 @@ body {
 }
 
 .gif-placeholder {
-    width: 500px;
+    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;  /* 强制保持正方形，防止 GIF 加载前塌陷 */
     overflow: hidden;
@@ -342,7 +342,7 @@ body {
 /* 针对小屏幕手机再次微调 */
 @media screen and (max-width: 375px) {
     .gif-photo-large {
-        max-width: 500px;
+        max-width: 280px;
     }
 }
 
@@ -1003,8 +1003,8 @@ body {
     }
     
     .gif-photo {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     
     .birthday-message p {
