@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Jeremiah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景音樂 -->
+    <audio id="bgMusic" loop>
+        <source src="your-music.mp3" type="audio/mpeg">
+        <source src="your-music.wav" type="audio/wav">
+    </audio>
+    
+    <!-- 音樂控制按鈕 -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn">🎵</button>
+    </div>
+
+    <!-- 開場畫面 -->
+    <section id="opening" class="section active">
+        <div class="container">
+            <div class="birthday-card">
+                <div class="card-header">
+                    <h1 class="main-title">HAPPY BIRTHDAY</h1>
+                    <h2 class="name-title">Jeremiah</h2>
+                </div>
+                
+                <div class="card-content">
+                    <div class="left-content">
+                        <div class="birthday-message">
+                            <p>Happy Birthday, My Beloved Husband Jeremiah!
+                                Thank you for staying by my side during the lowest moments of my life — for encouraging me, supporting me, and never giving up on me. I am so grateful to have you.</p>
+                            <p></p>
+                            <p class="love-signature">I Love you always.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="right-content">
+                        <div class="calendar">
+                            <h3 class="month-title">February 2026</h3>
+                            <div class="calendar-grid">
+                                <div class="weekdays">
+                                    <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                                </div>
+                                <div class="days">
+                                    <span class="weekend">01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span class="weekend">07</span>
+                                    <span class="weekend">08</span><span>09</span><span>10</span><span>11</span><span>12</span><span>13</span><span class="birthday weekend">🎂</span>
+                                    <span class="weekend">15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span class="weekend">21</span>
+                                    <span class="weekend">22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span class="weekend">28</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="photo-section">
+                    <div class="main-photo">
+                        <div class="photo-placeholder">
+                            <img src="Images/jeremiah.png" alt="Birthday Photo">
+                        </div>
+                    </div>
+                    <div class="gif-photos">
+                            <div class="gif-photo gif-photo-large">
+                            <div class="gif-placeholder">
+                            <img src="Images/07.gif" alt="Birthday GIF">
+                            </div>
+                            <p class="gif-caption">
+                                Jeremiah 29:11 For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Photo Slider Section (replacing WISHERS) -->
+                <div class="wishers-section">
+                    <div class="photo-slider-title">
+                        <h2 class="photo-slider-heading">ღ´͈ ᵕ `͈ )🎂(´͈ ᵕ `͈ ღ</h2>
+                    </div>
+                    <div class="photo-slider">
+                        <div class="photo-slide">
+                            <img src="Images" alt="1">
+                        </div>
+                        <div class="photo-slide">
+                            <img src="Images" alt="2">
+                        </div>
+                        <div class="photo-slide">
+                            <img src="Images" alt="3">
+                        </div>
+                        <div class="photo-slide">
+                            <img src="Images" alt="4">
+                        </div>
+                        <div class="photo-slide">
+                            <img src="Images" alt="5">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <div class="footer-text">HAPPY BIRTHDAY 2026</div>
+                    <div class="signature">by Hanson Low</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 祝福語區段 (已移除功能，保留空節點以防腳本調用) -->
+    <section id="wishes" class="section"></section>
+
+    <!-- 浮動愛心 -->
+    <div class="floating-hearts">
+        <span>⭐️</span>
+        <span>✨</span>
+        <span>🌟</span>
+        <span>⭐️</span>
+        <span>✨</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
