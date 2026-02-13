@@ -312,48 +312,38 @@ body {
     width: 100px;
     height: 100px;
 }
-
+/* 修改 GIF 容器，使其在手机上自适应 */
 .gif-photo-large {
-    width: 400px;
-    height: 400px;
+    width: 100%;          /* 宽度占满父容器 */
+    max-width: 350px;     /* 在大屏手机上也不要太大 */
+    height: auto;         /* 高度根据内容自动伸缩 */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.gif-caption {
-    margin-top: 8px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    color: #f48728;
-    text-align: center;
-    text-transform: none;
-    line-height: 1.5;
-    text-shadow: none;
+    margin: 0 auto;       /* 居中 */
 }
 
 .gif-placeholder {
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
     width: 100%;
-    color: #333;
-    transition: all 0.3s ease;
-    cursor: default;
-    -webkit-tap-highlight-color: transparent;
-    box-shadow: none;
+    height: auto;
+    aspect-ratio: 1 / 1;  /* 强制保持正方形，防止 GIF 加载前塌陷 */
+    overflow: hidden;
+    border-radius: 12px;  /* 给 GIF 加个圆角更好看 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .gif-placeholder img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0;
+    object-fit: cover;    /* 确保 GIF 填满容器不留白 */
+    display: block;       /* 消除图片底部间隙 */
+}
+
+/* 针对小屏幕手机再次微调 */
+@media screen and (max-width: 375px) {
+    .gif-photo-large {
+        max-width: 280px;
+    }
 }
 
 /* WISHERS Section in main page */
